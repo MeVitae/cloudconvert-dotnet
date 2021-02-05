@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\cloudconvert-dontnet-azureclient\cloudconvert-dontnet-azureclient.csproj" />
+    <ProjectReference Include="..\cloudconvert-dotnet-azureclient\cloudconvert-dotnet-azureclient.csproj" />
     <ProjectReference Include="..\cloudconvert-dotnet\cloudconvert-dotnet.csproj" />
   </ItemGroup>
 

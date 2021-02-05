@@ -1,12 +1,10 @@
-﻿using Azure.Storage;
-using Azure.Storage.Sas;
-using cloudconvert_dontnet_azureclient;
-using cloudconvert_dotnet.Helpers;
+﻿using cloudconvert_dotnet.Helpers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
+using cloudconvert_dontnet_azureclient;
 
 namespace cloudconvert_dotnet.Tests
 {

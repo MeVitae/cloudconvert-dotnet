@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudconvert-dotnet", "clou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudconvert-dotnetTests", "cloudconvert-dotnetTests\cloudconvert-dotnetTests.csproj", "{D85E774E-B9CF-4110-8F55-1C28C732EDF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cloudconvert-dontnet-azureclient", "cloudconvert-dontnet-azureclient\cloudconvert-dontnet-azureclient.csproj", "{BB6FE493-61B0-4F65-80C0-A669B3A69917}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudconvert-dotnet-azureclient.models", "cloudconvert-dotnet-azureclient.models\cloudconvert-dotnet-azureclient.models.csproj", "{C20652C8-809B-48AE-BCD4-57E52473924B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cloudconvert-dotnet-azureclient.models", "cloudconvert-dotnet-azureclient.models\cloudconvert-dotnet-azureclient.models.csproj", "{C20652C8-809B-48AE-BCD4-57E52473924B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudconvert-dotnet-azureclient", "cloudconvert-dotnet-azureclient\cloudconvert-dotnet-azureclient.csproj", "{7CB270E3-3D83-41EB-9248-316C75A77D76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{D85E774E-B9CF-4110-8F55-1C28C732EDF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D85E774E-B9CF-4110-8F55-1C28C732EDF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D85E774E-B9CF-4110-8F55-1C28C732EDF4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB6FE493-61B0-4F65-80C0-A669B3A69917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB6FE493-61B0-4F65-80C0-A669B3A69917}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB6FE493-61B0-4F65-80C0-A669B3A69917}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB6FE493-61B0-4F65-80C0-A669B3A69917}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C20652C8-809B-48AE-BCD4-57E52473924B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C20652C8-809B-48AE-BCD4-57E52473924B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C20652C8-809B-48AE-BCD4-57E52473924B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C20652C8-809B-48AE-BCD4-57E52473924B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CB270E3-3D83-41EB-9248-316C75A77D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB270E3-3D83-41EB-9248-316C75A77D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB270E3-3D83-41EB-9248-316C75A77D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB270E3-3D83-41EB-9248-316C75A77D76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
