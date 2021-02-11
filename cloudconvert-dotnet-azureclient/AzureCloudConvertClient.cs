@@ -72,7 +72,7 @@ namespace cloudconvert_dontnet_azureclient
         {
             var commonAzure = GetCommonAzureModels(blobName);
 
-            var uploadedBlob = await azureContainerClient.UploadBlobAsync(blobName, new MemoryStream(fileBytes));
+            var uploadedBlob = await azureContainerClient.UploadBlobAsync(commonAzure.blob, new MemoryStream(fileBytes));
 
             var uploadStatus = uploadedBlob.GetRawResponse().Status;
             // Error Handling
@@ -101,6 +101,20 @@ namespace cloudconvert_dontnet_azureclient
             BlobClient blobClient = azureContainerClient.GetBlobClient(blobName);
             var blob = await blobClient.DownloadAsync();
             return ConvertToBase64(blob.Value.Content);
+        }
+
+        public async Task<bool> Delete(string uploadBlob, string downloadBlob)
+        {
+            BlobClient uploadClient = azureContainerClient.GetBlobClient(uploadBlob);
+            BlobClient downloadClient = azureContainerClient.GetBlobClient(downloadBlob);
+
+            var uploadDeleteTask = uploadClient.DeleteAsync();
+            var downloadDeleteTask = downloadClient.DeleteAsync();
+
+            var deleteResult = await Task.WhenAll(uploadDeleteTask, downloadDeleteTask);
+
+            return deleteResult.Where(m => m.Status >= 200 && m.Status <= 300)?.Count() == 2;
+
         }
     }
 }
